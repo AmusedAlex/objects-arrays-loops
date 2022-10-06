@@ -77,7 +77,8 @@ const arrayWithStrings = [
   "PeaceOut",
   "welcome",
   "help",
-  "futball",
+  ":)",
+  ":-)",
 ];
 const loopRounds = arrayWithStrings.length;
 let removedStrings = [];
