@@ -71,8 +71,19 @@ console.log("after = ", array);
  es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 console.log("\nExercise 8");
-const arrayWithStrings = ["Hello", "Bye", "Peace"];
-
-arrayWithStrings.(arrayWithStrings.length);
-
+const arrayWithStrings = ["Hello", "Bye", "PeaceOut"];
 console.log(arrayWithStrings);
+const arrayWithLength = [];
+let removedStrings = arrayWithStrings.splice(0, 1);
+
+arrayWithLength.push(removedStrings[0].length);
+
+removedStrings = arrayWithStrings.splice(0, 1);
+
+arrayWithLength.push(removedStrings[0].length);
+
+removedStrings = arrayWithStrings.splice(0, 1);
+
+arrayWithLength.push(removedStrings[0].length);
+
+console.log(arrayWithLength);
