@@ -64,7 +64,7 @@ console.log(
  Write an algorithm that calculates the total cost to charge the user with.
 */
 console.log("\nExercise 6");
-let totalShoppingCart = 60;
+let totalShoppingCart = 70;
 let shippingFee = 10;
 let totalCost;
 
@@ -102,19 +102,25 @@ const car1 = {
 
 const car2 = Object.assign({}, car1);
 const car3 = Object.assign({}, car1);
+const car4 = Object.assign({}, car1);
+const car5 = Object.assign({}, car1);
 
 car2.plate = "HG ST 22";
 car3.plate = "HG ST 33";
+car4.plate = "HG ST 44";
+car5.plate = "HG ST 55";
 
 console.log("Car1 =", car1);
 console.log("Car2 =", car2);
 console.log("Car3 =", car3);
+console.log("Car4 =", car4);
+console.log("Car5 =", car5);
 
 /* EXERCISE 9
  Create a variable called carsForRent and assign to it an array containing all the cars from the previous exercise.
 */
 console.log("\nExercise 9");
-const carsForRent = [car1, car2, car3];
+const carsForRent = [car1, car2, car3, car4, car5];
 
 console.log("Cars for rent", carsForRent);
 
@@ -143,14 +149,14 @@ console.log("Brand variable type = ", typeof car1.brand);
 console.log("\nExercise 12");
 const carsForSale = [];
 carsForSale.push(
-  (car4 = Object.assign({}, car1)),
-  (car5 = Object.assign({}, car1)),
-  (car6 = Object.assign({}, car1))
+  (car6 = Object.assign({}, car1)),
+  (car7 = Object.assign({}, car1)),
+  (car8 = Object.assign({}, car1))
 );
 
-car4.plate = "HG ST 44";
-car5.plate = "HG ST 55";
 car6.plate = "HG ST 66";
+car7.plate = "HG ST 77";
+car8.plate = "HG ST 88";
 
 const totalCars = carsForRent.length + carsForSale.length;
 
