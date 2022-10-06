@@ -71,12 +71,21 @@ console.log("after = ", array);
  es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 console.log("\nExercise 8");
-const arrayWithStrings = ["Hello", "Bye", "PeaceOut", "welcome"];
+const arrayWithStrings = [
+  "Hello",
+  "Bye",
+  "PeaceOut",
+  "welcome",
+  "help",
+  "futball",
+];
+const loopRounds = arrayWithStrings.length;
+let removedStrings = [];
 console.log(arrayWithStrings);
 const arrayWithLength = [];
 
-for (i = 0; i < arrayWithStrings.length + 1; i++) {
-  let removedStrings = arrayWithStrings.splice(0, 1);
+for (let i = 0; i < loopRounds; i++) {
+  removedStrings = arrayWithStrings.splice(0, 1);
   arrayWithLength.push(removedStrings[0].length);
 }
 
